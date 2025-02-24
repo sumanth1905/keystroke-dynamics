@@ -96,7 +96,7 @@ def train_model():
 
 def update_password():
     """Menu for changing password or training model"""
-    print("\n1. Change password & train model")
+    print("\n1. set password & train model")
     print("2. Only train the model")
     choice = input("Enter your choice (1 or 2): ").strip()
 
@@ -120,7 +120,7 @@ def change_password():
 
 def update_threshold():
     """Update the threshold in train_auth.py"""
-    new_threshold = input("Enter new threshold (e.g., 0.15): ").strip()
+    new_threshold = input("Enter new threshold (e.g., 0.10): ").strip()
     with open(TRAIN_AUTH_FILE, "r") as file:
         content = file.read()
     content = re.sub(r'THRESHOLD\s*=\s*[\d\.]+', f'THRESHOLD = {new_threshold}', content)
