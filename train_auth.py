@@ -7,7 +7,7 @@ import msvcrt
 import sys
 
 # Constants
-PASSWORD = ""
+PASSWORD = "sumanth"
 THRESHOLD = 0.10  # Reduced threshold for more lenient matching
 NUM_FEATURES = len(PASSWORD) - 1  # Number of inter-key intervals
 

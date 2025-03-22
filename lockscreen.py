@@ -55,9 +55,9 @@ class KeystrokeLockscreen:
         
         # Security questions and answers
         self.security_questions = {
-    "": "",
-    "": "",
-    "": "",
+    "gjkkj": "sum",
+    "hghjhkj": "suman",
+    "jhgbj": "sumanth",
 }
         self.current_question_index = 0
         self.security_mode = False
@@ -380,7 +380,7 @@ class KeystrokeLockscreen:
         if not self.matrix_rain_running:
             item = self.canvas.find_closest(event.x, event.y)
             char = self.canvas.itemcget(item, 'text')
-            if char == "": # set any one alphanumeric character
+            if char == "1": # set any one alphanumeric character
                 self.show_security_questions()
                 self.matrix_rain_running = True
                 self.update_matrix_rain_effect()
